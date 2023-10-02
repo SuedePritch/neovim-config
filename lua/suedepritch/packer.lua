@@ -7,8 +7,9 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 --- colorscheme
-  use { "whatyouhide/vim-gotham" }
---- treesitter
+ use("SuedePritch/NorthernLights.vim")
+
+-- treesitter
 use {'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
@@ -22,6 +23,10 @@ end}
   use("mbbill/undotree")
   use("tpope/vim-fugitive")  
   use("github/copilot.vim")
+  use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
 use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',

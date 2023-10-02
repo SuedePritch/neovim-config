@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "gotham256"
+	color = color or "northernlights"
 	vim.cmd.colorscheme(color)
 	vim.cmd("highlight Normal guibg=none")
 
