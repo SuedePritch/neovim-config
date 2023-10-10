@@ -11,4 +11,3 @@ if fn.isdirectory(after_dir) then
     execute('luafile ' .. fn.fnameescape(file))
   end
 end
-
